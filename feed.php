@@ -91,7 +91,7 @@ set_make_full_url();
 $rss = new UniversalFeedCreator();
 $rss->encoding=get_pwg_charset();
 $rss->title = $conf['gallery_title'];
-$rss->title.= ' (as '.stripslashes($user['username']).')';
+$rss->title.= ' ('.$lang['as'].' '.stripslashes($user['username']).')';
 
 $rss->link = get_gallery_home_url();
 
